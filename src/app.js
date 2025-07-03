@@ -5,7 +5,7 @@ const productSelect = document.querySelector("#product")
 
 
 // 제품 목록 불러오기
-fetch("http://localhost:8000/products/")
+fetch("https://manualqa-demo-25-backend.fly.dev/products/")
   .then(res => res.json())
   .then(data => {
     data.products.forEach(product => {
@@ -38,7 +38,7 @@ form.addEventListener("submit", async (e) => {
   questionInput.value = ""
 
   try {
-    const res = await fetch("http://localhost:8000/query/", {
+    const res = await fetch("https://manualqa-demo-25-backend.fly.dev/query/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ question, product }), 
