@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>QA 챗봇</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="layout">
+    <div class="container">
+      <h1>스마트톡</h1>
+      <div class="product-area">
+        <select id="product">
+          <option value="">-- 제품 선택 --</option>
+        </select>
+      </div>
+      <div id="answer" class="chat-box"></div>
+
+      <form id="chat-form">
+        <input type="text" id="question" placeholder="질문을 입력하세요" autocomplete="off" />
+        <button type="submit">질문하기</button>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+
+</html>
